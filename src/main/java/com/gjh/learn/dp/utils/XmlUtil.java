@@ -17,15 +17,23 @@ import java.io.IOException;
  * @author kevinlights
  */
 public class XmlUtil {
-    public static String getSimpleFactory() {
+    /**
+     *
+     *   design-pattern>simple-factory>type:A
+     *
+     * @param firstTag simple-factory
+     * @param secondTag type
+     * @return
+     */
+    public static String getValue(String firstTag, String secondTag) {
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document doc = builder.parse(XmlUtil.class.getClassLoader().getResourceAsStream("design-pattern.xml"));
-            NodeList childNodes = doc.getElementsByTagName("simple-factory").item(0).getChildNodes();
+            NodeList childNodes = doc.getElementsByTagName(firstTag).item(0).getChildNodes();
             for (int i = 0; i < childNodes.getLength(); i++) {
                 Node item = childNodes.item(i);
-                if ("type".equals(item.getNodeName())) {
+                if (secondTag.equals(item.getNodeName())) {
                     return item.getFirstChild().getNodeValue();
                 }
             }

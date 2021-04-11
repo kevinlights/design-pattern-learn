@@ -7,7 +7,7 @@ package com.gjh.learn.dp.factorymethod;
  */
 public abstract class Product {
     public void commonMethod() {
-
+        System.out.println("Product commonMethod");
     }
 
     abstract void subMethod();
