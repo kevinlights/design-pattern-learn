@@ -18,7 +18,8 @@ public class Client {
         // productB.subMethod();
 
         String simpleFactory = XmlUtil.getSimpleFactory();
-        Product product = Factory.createProduct(simpleFactory);
+        // Product product = Factory.createProduct(simpleFactory);
+        Product product = Product.build(simpleFactory);
         product.commonMethod();
         product.subMethod();
     }

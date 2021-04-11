@@ -12,4 +12,13 @@ public abstract class Product {
     }
 
     abstract void subMethod();
+
+    public static Product build(String type) throws Exception {
+        if ("A".equals(type)) {
+            return new ConcreteProductA();
+        } else if("B".equals(type)) {
+            return new ConcreteProductB();
+        }
+        throw new Exception("No this product.");
+    }
 }
