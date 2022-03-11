@@ -13,6 +13,7 @@
         <module>visitor-pattern</module>
         <module>dp-util</module>
         <module>template-method-pattern</module>
+        <module>strategy-pattern</module>
     </modules>
 
     <properties>
@@ -26,6 +27,12 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.16</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.gjh.learn</groupId>
+            <artifactId>dp-util</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
