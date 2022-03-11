@@ -12,6 +12,7 @@
         <module>factory-pattern-backup</module>
         <module>visitor-pattern</module>
         <module>dp-util</module>
+        <module>template-method-pattern</module>
     </modules>
 
     <properties>
