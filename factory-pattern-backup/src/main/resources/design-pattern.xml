@@ -5,6 +5,6 @@
     </simple-factory>
 
     <factory-method>
-        <factory-class>com.gjh.learn.dp.factorymethod.ConcreteFactoryA</factory-class>
+        <factory-class>dp.factorymethod.ConcreteFactoryA</factory-class>
     </factory-method>
 </design-pattern>

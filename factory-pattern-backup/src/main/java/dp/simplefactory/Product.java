@@ -1,13 +1,19 @@
-package com.gjh.learn.dp.simplefactory;
+package dp.simplefactory;
 
 /**
  * created on 2021/4/11
  *
  * @author kevinlights
  */
-public class Factory {
+public abstract class Product {
 
-    public static Product createProduct(String type) throws Exception {
+    public void commonMethod() {
+        System.out.println("common Method");
+    }
+
+    abstract void subMethod();
+
+    public static Product build(String type) throws Exception {
         if ("A".equals(type)) {
             return new ConcreteProductA();
         } else if("B".equals(type)) {

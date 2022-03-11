@@ -1,4 +1,4 @@
-package com.gjh.learn.dp.simplefactory;
+package dp.simplefactory;
 
 /**
  * created on 2021/4/11

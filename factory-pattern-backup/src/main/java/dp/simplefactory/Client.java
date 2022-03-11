@@ -1,6 +1,6 @@
-package com.gjh.learn.dp.simplefactory;
+package dp.simplefactory;
 
-import com.gjh.learn.dp.utils.XmlUtil;
+import dp.utils.XmlUtil;
 
 /**
  * created on 2021/4/11

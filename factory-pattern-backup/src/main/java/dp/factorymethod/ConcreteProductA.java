@@ -1,4 +1,4 @@
-package com.gjh.learn.dp.factorymethod;
+package dp.factorymethod;
 
 /**
  * created on 2021/4/11

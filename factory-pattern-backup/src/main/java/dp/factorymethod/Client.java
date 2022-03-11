@@ -1,8 +1,6 @@
-package com.gjh.learn.dp.factorymethod;
+package dp.factorymethod;
 
-import com.gjh.learn.dp.utils.XmlUtil;
-
-import java.security.ProtectionDomain;
+import dp.utils.XmlUtil;
 
 /**
  * created on 2021/4/11
