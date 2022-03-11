@@ -17,7 +17,7 @@ public class Client {
         // productB.commonMethod();
         // productB.subMethod();
 
-        String simpleFactory = XmlUtil.getValue("simple-factory", "type");
+        String simpleFactory = XmlUtil.getL2Value("design-pattern.xml", "simple-factory", "type");
         // Product product = Factory.createProduct(simpleFactory);
         Product product = Product.build(simpleFactory);
         product.commonMethod();

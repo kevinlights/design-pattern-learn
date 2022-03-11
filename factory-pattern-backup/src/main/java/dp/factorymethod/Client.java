@@ -9,7 +9,7 @@ import dp.utils.XmlUtil;
  */
 public class Client {
     public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-        String factoryClass = XmlUtil.getValue("factory-method", "factory-class");
+        String factoryClass = XmlUtil.getL2Value("design-pattern.xml", "factory-method", "factory-class");
 
         Factory factory = (Factory) Class.forName(factoryClass).newInstance();
         Product product = factory.build();
