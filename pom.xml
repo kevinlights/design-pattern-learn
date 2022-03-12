@@ -17,6 +17,7 @@
         <module>state-pattern</module>
         <module>observe-pattern</module>
         <module>memento-pattern</module>
+        <module>mediator-pattern</module>
     </modules>
 
     <properties>
