@@ -18,6 +18,7 @@
         <module>observe-pattern</module>
         <module>memento-pattern</module>
         <module>mediator-pattern</module>
+        <module>iterator-pattern</module>
     </modules>
 
     <properties>
