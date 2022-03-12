@@ -19,6 +19,7 @@
         <module>memento-pattern</module>
         <module>mediator-pattern</module>
         <module>iterator-pattern</module>
+        <module>interpreter-pattern</module>
     </modules>
 
     <properties>
