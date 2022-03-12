@@ -16,6 +16,7 @@
         <module>strategy-pattern</module>
         <module>state-pattern</module>
         <module>observe-pattern</module>
+        <module>memento-pattern</module>
     </modules>
 
     <properties>
