@@ -58,6 +58,10 @@ class Account {
         this.balance = balance;
     }
 
+    /**
+     * 状态切换
+     * @param state
+     */
     public void setState(AccountState state) {
         this.state = state;
     }
