@@ -21,6 +21,7 @@
         <module>iterator-pattern</module>
         <module>interpreter-pattern</module>
         <module>command-pattern</module>
+        <module>chain-of-responsibility-pattern</module>
     </modules>
 
     <properties>
