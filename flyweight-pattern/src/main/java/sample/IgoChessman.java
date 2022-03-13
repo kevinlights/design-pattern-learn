@@ -1,5 +1,9 @@
 package sample;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Hashtable;
 
 /**
@@ -7,6 +11,30 @@ import java.util.Hashtable;
  *
  * @author kevinlights
  */
+class ClientV2 {
+    public static void main(String[] args) {
+        IgoChessman black1, black2, black3, white1, white2;
+
+        IgoChessmanFactory factory = IgoChessmanFactory.getInstance();
+
+        //通过享元工厂获取三颗黑子
+        black1 = factory.getIgoChessman("b");
+        black2 = factory.getIgoChessman("b");
+        black3 = factory.getIgoChessman("b");
+        System.out.println("判断两颗黑子是否相同：" + (black1==black2));
+        //通过享元工厂获取两颗白子
+        white1 = factory.getIgoChessman("w");
+        white2 = factory.getIgoChessman("w");
+        System.out.println("判断两颗白子是否相同：" + (white1==white2));
+        //显示棋子，同时设置棋子的坐标位置
+        black1.display(new Coordinates(1,2));
+        black2.display(new Coordinates(3,4));
+        black3.display(new Coordinates(1,3));
+        white1.display(new Coordinates(2,5));
+        white2.display(new Coordinates(2,4));
+    }
+}
+
 class Client {
     public static void main(String[] args) {
         IgoChessman black1, black2, black3, white1, white2;
@@ -64,6 +92,10 @@ public abstract class IgoChessman {
     public void display() {
         System.out.println("棋子颜色：" + this.getColor());
     }
+
+    public void display(Coordinates coord) {
+        System.out.println("棋子颜色：" + this.getColor() + "，棋子位置：" + coord.getX() + "，" + coord.getY() );
+    }
 }
 
 class BlackIgoChessman extends IgoChessman {
@@ -82,4 +114,11 @@ class WhiteIgoChessMan extends IgoChessman {
     }
 }
 
+// 坐标类，用于棋子外部状态
+@Getter
+@Setter
+@AllArgsConstructor
+class Coordinates {
+    private int x, y;
+}
 
