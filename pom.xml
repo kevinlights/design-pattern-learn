@@ -27,6 +27,7 @@
         <module>facade-pattern</module>
         <module>decorator-pattern</module>
         <module>composite-pattern</module>
+        <module>bridge-pattern</module>
     </modules>
 
     <properties>
