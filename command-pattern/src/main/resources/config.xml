@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <command1>sample.HelpCommand</command1>
+    <command2>sample.MinimizeCommand</command2>
+</config>
