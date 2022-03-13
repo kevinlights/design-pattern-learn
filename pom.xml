@@ -29,6 +29,7 @@
         <module>composite-pattern</module>
         <module>bridge-pattern</module>
         <module>adapter-pattern</module>
+        <module>builder-pattern</module>
     </modules>
 
     <properties>
