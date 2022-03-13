@@ -26,6 +26,7 @@
         <module>flyweight-pattern</module>
         <module>facade-pattern</module>
         <module>decorator-pattern</module>
+        <module>composite-pattern</module>
     </modules>
 
     <properties>
