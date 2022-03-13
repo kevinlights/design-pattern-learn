@@ -28,6 +28,7 @@
         <module>decorator-pattern</module>
         <module>composite-pattern</module>
         <module>bridge-pattern</module>
+        <module>adapter-pattern</module>
     </modules>
 
     <properties>
